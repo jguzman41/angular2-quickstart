@@ -1,12 +1,12 @@
 import {RouterModule, Routes} from "@angular/router";
-import {DicewareComponent} from "./components/diceware-component";
+
 import {SplashComponent} from "./components/splash-component";
 
 
-export const allAppComponents = [DicewareComponent, SplashComponent];
+export const allAppComponents = [SplashComponent];
 
 export const routes: Routes = [
-	{path: "diceware/:roll", component: DicewareComponent},
+	{path: "diceware/:roll"},
 	{path: "", component: SplashComponent}
 ];
 
